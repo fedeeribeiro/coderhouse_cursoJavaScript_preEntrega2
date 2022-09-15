@@ -253,6 +253,20 @@ img {
     margin-top: 0.5rem;
 }
 
+#contenedor-filtro{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    overflow: hidden;
+}
+
 .hidden{
     display: none;
 }

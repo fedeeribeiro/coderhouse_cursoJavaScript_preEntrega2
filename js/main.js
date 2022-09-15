@@ -465,3 +465,16 @@ botonConfirmarCompra.addEventListener("click", function(e){
         }, 3000);
     }
 });
+
+// Añado un buscador
+document.addEventListener("keyup", (e) => {
+    if(e.target.matches("#filtro")){
+        document.querySelectorAll(".titulo-evento").forEach(evento => {
+            evento.textContent.toLowerCase().includes(e.target.value.toLowerCase())?
+            evento.parentNode.classList.remove("hidden") : evento.parentNode.classList.add("hidden");
+            if(document.getElementById("mensaje-filtro")){
+                document.getElementById("mensaje-filtro").remove();
+            }
+        });
+    }
+});
