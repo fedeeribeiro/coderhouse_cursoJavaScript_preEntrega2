@@ -267,6 +267,12 @@ img {
     overflow: hidden;
 }
 
+#filtro{
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
 .hidden{
     display: none;
 }
